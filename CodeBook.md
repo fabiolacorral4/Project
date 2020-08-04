@@ -16,7 +16,7 @@ Contain the average of the mean and standard deviation of each measurement taken
 
 
 ## The steps performed to transform and clean the data are as follows:
-1. loaded the dplyr library
+1. Loaded the dplyr library
 2. Read in the files from the original data set containg measurement data and variable labels
 3. Column-binded (cbind() )the "train" and "test" data separately, adding a variable that specified whether the data corresponded to a train or test trial in addition to subject ID, activity label, and measurements
 4. Merged the rows of the train and test data sets (rbind() ) to create a single data set, making sure to include describptive variable names (taken from the data set's files)
