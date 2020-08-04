@@ -19,7 +19,7 @@ Contain the average of the mean and standard deviation of each measurement taken
 1. Loaded the dplyr library
 2. Read in the files from the original data set containg measurement data and variable labels
 3. Column-binded (cbind() )the "train" and "test" data separately, adding a variable that specified whether the data corresponded to a train or test trial in addition to subject ID, activity label, and measurements
-4. Merged the rows of the train and test data sets (rbind() ) to create a single data set, making sure to include descriptive variable names (variable names taken from the data set's files)
+4. Merged the rows of the train and test data sets (rbind() ) to create a single data set, making sure to include descriptive variable names (variable names taken from one of the data set's files)
 5. Extracted only the variables with the average and standard deviation values for each measurement by using grep() to find those variables that included either 'mean' or 'std' somewhere in their names
 6. Using a for-loop, replaced the original number labels decribing the activity perofrmed by the subject in the experiment with the string name of the activity 
 7. Grouped the data by subject and then by activity label (using dplyr's group_by() ) and summarized each of the resulting 80 groups (30 subject x 6 activities) to create a tidy data set with the mean for each of the measurements 
