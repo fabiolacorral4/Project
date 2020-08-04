@@ -25,7 +25,7 @@ actNames <- read.table("./activity_labels.txt") ## load activity names
 for(i in 1:nrow(actNames)){ ## replace numbers in activity label col
     data$activityLabel[data$activityLabel == actNames[i, 1]] = actNames[i, 2]
 }
-## 3-data set with avg for each variable per activity and subject
+## data set with avg for each variable per activity and subject
 data_grouped <- group_by(data, subjects, activityLabel, .add = TRUE)
 data_grouped <- summarise_each(data_grouped, mean)
 ## load final data set into text file 
